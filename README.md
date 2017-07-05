@@ -11,3 +11,4 @@ A la fin du test, l'utilisateur reçoit les résultats par mail.
 
 Le test est chronométré. La durée du test se paramètre dans test.php (variable $dureeMinutesTest).  
 Toutes les questions et réponses sont gérées dans le fichier questions.php.
+N'oubliez pas de configurer l'adresse e-mail de l'envoyeur dans le fichier reponses-test.php.
