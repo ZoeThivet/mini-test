@@ -1,0 +1,148 @@
+body {
+	margin:0;
+	background-color: #300030;
+	font-family:Roboto;
+}
+
+h1 {
+	background-color: #3A0A3A;
+	padding:10 15 10 10;
+	color:#262d3d;
+	text-align:center;
+	font-family:Roboto;
+	font-size: 36px;
+	color:#D0A0D0;
+}
+
+table, tr, th, td {
+	border: solid 1px;
+	border-collapse: collapse;
+	padding: 5px;
+	width: auto;
+	margin: 5px;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+#wrapper {
+	display: block;
+	margin: 0 auto;
+	max-width: 1000px;
+	/*overflow: hidden;*/
+	text-overflow: ellipsis;
+}
+
+#header {
+	background-color: #262d3d;
+	display: block;
+}
+
+#main_content {
+	background-color: #f2f2f2;
+	padding: 10 15 10 25;
+}
+
+#reponse {
+	background-color: white;
+	padding: 20px;
+}
+
+#score {
+	background-color: #9BCAE4;
+	padding:10 0 10 20;
+	color:#262d3d;
+	width:80%;
+	margin:0 auto;
+	border-radius:3px;
+}
+
+#titre_recos {
+	text-align: center;
+	background-color: #ffdd99;
+	padding:10 15 10 10;
+	color:#262d3d;
+	text-align:center;
+	margin-top:50px;
+	margin-bottom:0px;
+}
+
+#recos {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 1 10 0 25;
+	background-color: #fff5cc;
+	margin-top:0;
+}
+
+#notes {
+	border: solid 1px;
+	padding: 1 15 10 10;
+	background-color: #f2f2f2;
+}
+
+#pourcentages, #regles {
+	display: none;
+}
+
+#camembert {
+	display:block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+#logo {
+	float: right;
+	margin-top:20px;
+}
+
+@keyframes blink {50% { color: transparent; }}
+.loader__dot {
+	color:#262d3d;
+	font-size: 50px;
+	animation: 3s blink infinite
+}
+.loader__dot:nth-child(2) { animation-delay: 1000ms }
+.loader__dot:nth-child(3) { animation-delay: 2000ms }
+
+#mc-embedded-subscribe:hover {
+	background-color: #99ca3c !important;
+}
+
+#submit, #submitMail {
+	display:block;
+	margin: 0 auto;
+	background-color: #D0A0D0;
+	border:none;
+	padding:20px;
+	border-radius:3px;
+	font-size: 20px;
+}
+
+#submit:hover, #submitMail:hover {
+	background-color: #EEBEEE;
+}
+
+#chrono {
+  position: fixed;
+  bottom: 0px;
+  padding:10px;
+  padding-bottom:10px;
+  background-color: #776666;
+  width: 100%;
+}
+
+#loader {
+  position: absolute;
+  z-index: 1;
+  top:0px;
+  left: 0px;
+  padding-top: 50px;
+  text-align:center;
+  background-color: white;
+  width: 100%;
+  height: 50%;
+  padding: 30px;
+  margin-top: 30px;
+}
