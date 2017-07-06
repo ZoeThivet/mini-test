@@ -6,6 +6,7 @@
 
 	$titreFormulaire = "On vous envoie vos résultats&nbsp;!";
 	$inputMail = "Votre adresse e-mail&nbsp;";
+	$adresseEmailEnvoyeur = "baloumbati@yopmail.com"; # A configurer !
 	$titreConfirmation = "Parfait&nbsp;!";
 	$corpsConfirmation = "<p>Si vous avez indiqué une adresse e-mail correcte, vous allez recevoir vos résultats dans un instant.</p>";
 	$messageMail = "<p>Vous recevez ce courriel car vous avez réalisé un test.</p>";
@@ -15,7 +16,7 @@
 
 ?>
 	
-	<html>
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><?php echo $title; ?></title>
@@ -52,7 +53,7 @@
 	        ";
 		    $messageMail = $messageMail . $message;
 		    $to          = $_POST['email'];
-		    $headers     = "From: zthivet@gmail.com\r\n";
+		    $headers     = "From: ".$adresseEmailEnvoyeur."\r\n";
 		    $headers     = $headers . "Content-Type: text/html; charset=UTF-8\r\n";
 		    mail($to, $subject, $messageMail, $headers);
 
